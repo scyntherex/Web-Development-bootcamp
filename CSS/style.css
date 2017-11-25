@@ -1,0 +1,21 @@
+h1 {
+	color: red;
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: dashed;*/
+
+	border: 8px solid red;
+}
+
+li {
+	color: purple;
+}
+
+h4 {
+	color: green;
+}
+
+body {
+	background: url(http://hdwpro.com/wp-content/uploads/2017/03/Art-Background-Image.png);
+	background: cover;
+}
