@@ -1,0 +1,17 @@
+/*td:nth-of-type(1) tr:nth-of-type(1) {
+	height: 100px;
+	width: 100px;
+	border-left-style: none;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+}
+*/
+
+td {
+	height: 100px;
+	width: 100px;
+	border: solid;
+}
+
+
