@@ -1,17 +1,26 @@
-/*td:nth-of-type(1) tr:nth-of-type(1) {
-	height: 100px;
-	width: 100px;
-	border-left-style: none;
-	border-top-style: none;
-	border-right-style: solid;
-	border-bottom-style: solid;
+table {
+	margin: auto;
 }
-*/
+
+h1 {
+	text-align: center;
+}
 
 td {
 	height: 100px;
 	width: 100px;
-	border: solid;
 }
+
+tr:nth-of-type(2) td {
+	border-top: solid;
+	border-bottom: solid;
+}
+
+tr td:nth-of-type(2) {
+	border-left: solid;
+	border-right: solid;
+}
+
+
 
 
