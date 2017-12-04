@@ -2,6 +2,9 @@ body {
 	border: 20px solid;
 	border-color: #bdc3c7;
 	font-family: source sans pro;
+	padding: 15px 30px 15px 30px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 h1 {
@@ -15,10 +18,15 @@ h2 {
 	color: #2c3e50;
 }
 
-p:first-child div {
-	border-left: 2px solid #bdc3c7;
+p.first {
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #bdc3c7;
+	padding-left: 10px;
 }
 
-div {
-	border-bottom: 2px solid #bdc3c7
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
