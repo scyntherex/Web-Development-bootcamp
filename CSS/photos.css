@@ -1,12 +1,23 @@
-h1 {
-	border-bottom: solid 2px;
-	text-align: left;
-}
-
 img {
 	height: 30%;
 	width: 30%;
 	float: left;
 	margin: 1.66%;
+	padding-bottom: 75px;
 	-webkit-transform: rotate(270deg);
+}
+
+p {
+	font-family: Raleway;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-bottom: 3px solid #f1f1f1;
+	width: 30%;
+	padding-bottom: 20px;
+}
+
+body {
+	background-image: url(http://www.htmlhive.com/wp-content/uploads/2012/02/bluestripes.png);
 }
