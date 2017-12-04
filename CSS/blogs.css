@@ -2,19 +2,28 @@ body {
 	border: 20px solid;
 	border-color: #bdc3c7;
 	font-family: source sans pro;
-	padding: 15px 30px 15px 30px;
-	margin-left: 20%;
-	margin-right: 20%;
+	padding: 20px;
+	max-width: 700px;
+	width: 80%;
+	margin: 20px auto;
 }
 
-h1 {
+/*h1 {
 	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #3498db;
+}*/
+
+.date {
+	letter-spacing: 0.2rem;
 	text-transform: uppercase;
 	font-size: 16px;
 	color: #3498db;
 }
 
 h2 {
+	font-size: 2.0rem;
 	color: #2c3e50;
 }
 
@@ -22,11 +31,33 @@ p.first {
 	border-left-width: 5px;
 	border-left-style: solid;
 	border-left-color: #bdc3c7;
-	padding-left: 10px;
+	padding-left: 5px;
 }
 
-hr.style-two {
+/*hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}*/
+
+.post {
+	margin-bottom: 25px;
+}
+
+hr { 
+    overflow: visible; 
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
