@@ -18,3 +18,19 @@
 + prompt("") - Creates an input to store variables.
 + console.log("") - Prints message in the Javascript console.
 + other methods (clear())
+
+### Comparison operators
++ >, >=, <, <=, ==, !=, === (type coersion), !== (type coersion)
++ Ex: 1 === 1, 1 == "1" (in JS)
++ true == 1 -> true
++ 0 == false -> true
++ null == undefined -> true
++ NaN == NaN -> false
+
+
+### Logical Operators
++ &&, ||, !
++ Ex: !(x===y) -> true assuming x = 5 and y = 9
+
+### Conditionals
++ if, else if, else
