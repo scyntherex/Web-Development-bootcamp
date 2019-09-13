@@ -34,3 +34,11 @@
 
 ### Conditionals
 + if, else if, else
+
+### Arrays
++ ForEach loop takes a function as an argument
++ calls the function FOR EACH elements in the array.
++ Example below
++ var colors = [red, org, ylw, grn]
++ printColor(**color argument**) {console.log(**color argument**)}
++ colors.forEach(printColor) is the same as for(var i = 0; i < colors.length; i++) {printColor(colors[i])};
