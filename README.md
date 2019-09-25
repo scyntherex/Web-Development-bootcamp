@@ -1,3 +1,9 @@
+# JQuery
+
+### CDN 2.1.4 (not the latest ver.)
++ "https://cdn.js.cloudflare.com/ajax/libs/jquery/2.1.4/"
+
+
 # JavaScript Notes
 
 ### 5 Primitives
