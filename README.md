@@ -7,6 +7,10 @@
 + 2.) High-performance
 + 3.) Javascript based; making it easy to learn.
 
+### NPM
++ Node package manager
++ Can easily install libraries that are already made. Less coding
+
 
 # JQuery
 
