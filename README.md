@@ -1,3 +1,13 @@
+# Node.js
+
+### Intro
++ What can Node.js do? Scripting language that can be used client AND server side.
++ Why use it? 
++ 1.) It's popular (not the important reason)
++ 2.) High-performance
++ 3.) Javascript based; making it easy to learn.
+
+
 # JQuery
 
 ### CDN 2.1.4 (not the latest ver.)
