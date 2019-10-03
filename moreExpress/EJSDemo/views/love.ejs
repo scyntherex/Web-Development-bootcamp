@@ -1,13 +1,9 @@
-<link rel="stylesheet" href="/app.css">
+<% include partials/header %>
+	<h1>You fell in love with: <%= thingVar.toUpperCase() %></h1>
 
-<h1>
-	You fell in love with: <%= thingVar.toUpperCase() %>
-</h1>
+	<% if(thingVar.toLowerCase() === "jenny") { %>
+		<p> GOOD CHOICE! </p>
+	<% } %>
 
-<% if(thingVar.toLowerCase() === "jenny") { %>
-	<p> GOOD CHOICE! </p>
-<% } %>
-
-<p>
-	this is the love.ejs
-</p>
+	<p>this is the love.ejs</p>
+<% include partials/footer %>
