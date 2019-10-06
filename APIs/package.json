@@ -6,7 +6,9 @@
   "dependencies": {
     "request": "^2.88.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "locus": "^2.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
