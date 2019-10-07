@@ -1,3 +1,10 @@
+# Databases
+
+### SQL(relational) vs NoSQL(non-relational)
++ SQL is tabular and flat. Needs multiple tables to relate data. It is not flexible; you have to follow a pattern.
++ Non-relational can be nested. No unique IDs needed. It's flexible. No patterns to follow.
++ SQL doess not necessarily mean it's better. Some situations are better with tables and some are not.
+
 # Node.js
 
 ### Intro
