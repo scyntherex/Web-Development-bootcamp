@@ -8,6 +8,9 @@ app.set("view engine", "ejs");
 var campgrounds =[
 		{name: "Sequoia", image: "https://www.nps.gov/seki/planyourvisit/images/GG_dorst-102_1.jpg"},
 		{name: "Grand Canyon", image: "https://c8.alamy.com/comp/DC9TYF/grand-canyon-national-park-arizona-usa-camping-along-the-colorado-DC9TYF.jpg"},
+		{name: "High Hrothgar", image: "https://vignette.wikia.nocookie.net/elderscrolls/images/b/b1/Adventurers_Campsite.png/revision/latest?cb=20121123194546"},
+		{name: "Sequoia", image: "https://www.nps.gov/seki/planyourvisit/images/GG_dorst-102_1.jpg"},
+		{name: "Grand Canyon", image: "https://c8.alamy.com/comp/DC9TYF/grand-canyon-national-park-arizona-usa-camping-along-the-colorado-DC9TYF.jpg"},
 		{name: "High Hrothgar", image: "https://vignette.wikia.nocookie.net/elderscrolls/images/b/b1/Adventurers_Campsite.png/revision/latest?cb=20121123194546"}
 	]
 
