@@ -78,6 +78,7 @@ app.get("/blogs/:id/edit", function(req, res){
 });
 
 //UPDATE ROUTE
+//Note: can be a POST method instead of PUT
 app.put("/blogs/:id", function(req, res){
 	Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err, updatedBlog){
 		if(err) {
@@ -87,6 +88,19 @@ app.put("/blogs/:id", function(req, res){
 		}
 	});
 });
+
+//DELETE ROUTE
+//Note: can be a GET method instead of delete
+app.delete("/blogs/:id", function(req, res){
+	//destroy blog
+	Blog.findByIdAndRemove(req.params.id, function(err){
+		if(err){
+			res.redirect("/blogs");
+		} else {
+			res.redirect("/blogs");
+		}
+	})
+})
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
 	console.log("Blog app server running...");
