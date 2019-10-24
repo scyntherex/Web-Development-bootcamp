@@ -10,18 +10,7 @@ mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true,
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
-/*Campground.create({
-		name: "High Hrothgar", 
-		image: "https://vignette.wikia.nocookie.net/elderscrolls/images/b/b1/Adventurers_Campsite.png/revision/latest?cb=20121123194546",
-		description: "This is one of the beautiful yet convenient campsites landmarked throughout Skyrim. High Hrothgar is one of the highest points of elevation in all of Cyrodil."
-	}, function(err, campground){
-		if(err) {
-			console.log(err);
-		} else {
-			console.log("NEW CAMPGROUND:");
-			console.log(campground);
-		}
-});	*/	
+
 
 app.get("/", function(req, res){
 	res.render("landing")
@@ -61,7 +50,7 @@ app.get("/campgrounds/new", function(req, res){
 
 app.get("/campgrounds/:id", function(req, res){
 	//find the campground with provided ID
-	Campground.findById(req.params.id, function(err, foundCampground){
+	Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground){
 		if(err){
 			console.log(err);
 		} else {
