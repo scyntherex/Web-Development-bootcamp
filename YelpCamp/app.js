@@ -22,7 +22,7 @@ app.get("/campgrounds", function(req, res) {
 		if(err){
 			console.log(err);
 		} else {
-			res.render("index", {campgrounds: allCampgrounds});
+			res.render("campgrounds/index", {campgrounds: allCampgrounds});
 		}
 	});
 });
@@ -45,7 +45,7 @@ app.post("/campgrounds", function(req, res){
 });
 
 app.get("/campgrounds/new", function(req, res){
-	res.render("new.ejs");
+	res.render("campgrounds/new");
 });
 
 app.get("/campgrounds/:id", function(req, res){
@@ -55,10 +55,22 @@ app.get("/campgrounds/:id", function(req, res){
 			console.log(err);
 		} else {
 			//render show template wit that campground
-	res.render("show", {campground:foundCampground});
+	res.render("campgrounds/show", {campground:foundCampground});
 		}
 	});
 });
+
+//COMMENTS Routes
+app.get("/campgrounds/:id/comments/new", function(req, res){
+	//find campgrounds by id
+	Campground.findById(req.params.id, function(err, campground){
+		if(err){
+			console.log(err);
+		} else {
+			res.render("comments/new", {campground: campground});
+		}
+	})
+})
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
 	console.log("YelpCamp server running...");
